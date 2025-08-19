@@ -14,6 +14,19 @@ def parse_date(s):
     except Exception:
         return None
 
+@app.route("/")
+def home():
+    return """
+    <h1>🚀 Mini Leave Management System</h1>
+    <p>Welcome! Use the links below to explore the API:</p>
+    <ul>
+        <li><a href="/health">Health Check</a></li>
+        <li><a href="/employees/1/balance">Check Employee Leave Balance (example)</a></li>
+        <li><a href="/employees/1/leaves">List Leaves for Employee (example)</a></li>
+    </ul>
+    <p>⚠️ Note: Some routes require POST requests with JSON (e.g., /employees, /leaves). Use Postman/APIDog to test those.</p>
+    """
+
 @app.route("/health", methods=["GET"])
 def health():
     return jsonify({"status":"ok"})
