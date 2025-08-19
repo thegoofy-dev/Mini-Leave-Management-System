@@ -84,4 +84,13 @@ This ZIP includes:
 - Add UI (React) and pagination/filtering for lists.
 - Add unit & integration tests and CI/CD pipeline.
 
+<<<<<<< HEAD
+
+
+**GitHub Repo Link**: https://github.com/thegoofy-dev/Mini-Leave-Management-System/
+
+**Live Link**: https://mini-leave-management-system-pcvl.onrender.com/
 ---
+=======
+---
+>>>>>>> 3e1393fa3d3f262a4a42e18539ef235d741c80cd
