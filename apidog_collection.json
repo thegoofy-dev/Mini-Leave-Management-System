@@ -1,0 +1,57 @@
+
+{
+  "name": "Leave Management - Local",
+  "baseUrl": "http://127.0.0.1:5000",
+  "requests": [
+    {
+      "name": "Health",
+      "method": "GET",
+      "path": "/health"
+    },
+    {
+      "name": "Create Employee",
+      "method": "POST",
+      "path": "/employees",
+      "body": {
+        "name": "Test User",
+        "email": "demo@example.com",
+        "department": "Engineering",
+        "joining_date": "2024-08-01"
+      }
+    },
+    {
+      "name": "Get Balance",
+      "method": "GET",
+      "path": "/employees/1/balance"
+    },
+    {
+      "name": "Apply Leave",
+      "method": "POST",
+      "path": "/leaves",
+      "body": {
+        "employee_id": 1,
+        "start_date": "2024-09-01",
+        "end_date": "2024-09-03",
+        "reason": "Vacation"
+      }
+    },
+    {
+      "name": "Approve Leave",
+      "method": "POST",
+      "path": "/leaves/1/approve"
+    },
+    {
+      "name": "Reject Leave",
+      "method": "POST",
+      "path": "/leaves/1/reject",
+      "body": {
+        "reason": "Conflict"
+      }
+    },
+    {
+      "name": "List Leaves",
+      "method": "GET",
+      "path": "/employees/1/leaves"
+    }
+  ]
+}
